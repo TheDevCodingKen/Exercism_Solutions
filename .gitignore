@@ -1,0 +1,24 @@
+# gitignore template for Exercism.io solutions
+# website: https://exercism.io/
+
+# Ignore .exercism folder which contains sensitive data
+.exercism
+
+#Ignore Exercism help files
+HELP.md
+HINTS.md
+
+#Ignore Visual Studio Code files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+Exercism_Solutions.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
