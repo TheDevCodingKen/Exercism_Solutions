@@ -1,6 +1,12 @@
 # gitignore template for Exercism.io solutions
 # website: https://exercism.io/
 
+#Ignore MacOS files
+.DS_Store
+
+#Ignore NPM file
+package-lock.json
+
 # Ignore .exercism folder which contains sensitive data
 .exercism
 
