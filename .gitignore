@@ -28,3 +28,6 @@ Exercism_Solutions.code-workspace
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+#Python3 virtual environment directory
+*.venv
