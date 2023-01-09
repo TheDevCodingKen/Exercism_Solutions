@@ -1,8 +1,4 @@
 // @ts-check
-//
-// The line above enables type checking for this file. Various IDEs interpret
-// the @ts-check directive. It will give you helpful autocompletion when
-// implementing this exercise.
 
 /**
  * Calculates the total bird count.
@@ -11,7 +7,11 @@
  * @returns {number} total bird count
  */
 export function totalBirdCount(birdsPerDay) {
-  throw new Error('Please implement the totalBirdCount function');
+  let sum = 0;
+  for (let i = 0; i < birdsPerDay.length; i++) {
+    sum += birdsPerDay[i];
+  }
+  return sum;
 }
 
 /**
@@ -22,7 +22,13 @@ export function totalBirdCount(birdsPerDay) {
  * @returns {number} birds counted in the given week
  */
 export function birdsInWeek(birdsPerDay, week) {
-  throw new Error('Please implement the birdsInWeek function');
+  let week1 = (week - 1) * 7;
+  let week2 = week1 + 7;
+  let sum = 0;
+  for (let i = week1; i < week2; i++) {
+    sum += birdsPerDay[i];
+  }
+  return sum;
 }
 
 /**
@@ -33,5 +39,8 @@ export function birdsInWeek(birdsPerDay, week) {
  * @returns {number[]} corrected bird count data
  */
 export function fixBirdCountLog(birdsPerDay) {
-  throw new Error('Please implement the fixBirdCountLog function');
+  for (let i = 0; i < birdsPerDay.length; i += 2) {
+    birdsPerDay[i] += 1;
+  }
+  return birdsPerDay;
 }
